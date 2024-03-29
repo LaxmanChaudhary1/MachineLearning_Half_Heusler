@@ -1,0 +1,147 @@
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 438 entries, 0 to 446
+Data columns (total 28 columns):
+ #   Column   Non-Null Count  Dtype  
+---  ------   --------------  -----  
+ 0   ZX       438 non-null    float64
+ 1   ZAB      438 non-null    float64
+ 2   ZAB.1    438 non-null    float64
+ 3   mX       438 non-null    float64
+ 4   mAB      438 non-null    float64
+ 5   ∆mAB     438 non-null    float64
+ 6   rowX     438 non-null    float64
+ 7   rowAB    438 non-null    float64
+ 8   ∆rowAB   438 non-null    float64
+ 9   colX     438 non-null    float64
+ 10  colAB    438 non-null    float64
+ 11  ∆colAB   438 non-null    float64
+ 12  eX       438 non-null    float64
+ 13  eAB      438 non-null    float64
+ 14  ∆eAB     438 non-null    float64
+ 15  rX       438 non-null    float64
+ 16  rAB      438 non-null    float64
+ 17  ∆rAB     438 non-null    float64
+ 18  χX       438 non-null    float64
+ 19  χAB      438 non-null    float64
+ 20  ∆χAB     438 non-null    float64
+ 21  alatt    438 non-null    float64
+ 22  cv       438 non-null    float64
+ 23  κ˜grain  438 non-null    float64
+ 24  κtransf  438 non-null    float64
+ 25  κforest  438 non-null    float64
+ 26  κanh     438 non-null    float64
+ 27  gap      438 non-null    float64
+dtypes: float64(28)
+memory usage: 99.2 KB
+{'Shape': (438, 28),
+ 'Data Type Counts': Index      3504
+ ZX         3504
+ ZAB        3504
+ ZAB.1      3504
+ mX         3504
+ mAB        3504
+ ∆mAB       3504
+ rowX       3504
+ rowAB      3504
+ ∆rowAB     3504
+ colX       3504
+ colAB      3504
+ ∆colAB     3504
+ eX         3504
+ eAB        3504
+ ∆eAB       3504
+ rX         3504
+ rAB        3504
+ ∆rAB       3504
+ χX         3504
+ χAB        3504
+ ∆χAB       3504
+ alatt      3504
+ cv         3504
+ κ˜grain    3504
+ κtransf    3504
+ κforest    3504
+ κanh       3504
+ gap        3504
+ dtype: int64,
+ 'Target Variables': ['cv'],
+ 'Description':                ZX         ZAB       ZAB.1          mX         mAB        ∆mAB  \
+ count  438.000000  438.000000  438.000000  438.000000  438.000000  438.000000   
+ mean    43.191781   35.757991   22.958904  102.372922   83.586895   58.346461   
+ std     23.929334   15.614627   15.825656   62.399617   40.037376   41.638506   
+ min      3.000000    3.500000    1.000000    6.940000    7.980000    0.940000   
+ 25%     27.000000   25.500000    9.000000   58.690000   57.400000   22.860000   
+ 50%     44.000000   35.500000   20.000000  101.070000   81.870000   49.810000   
+ 75%     56.750000   45.500000   31.750000  138.515000  106.490000   81.640000   
+ max     83.000000   78.000000   80.000000  208.980000  194.960000  202.040000   
+ 
+              rowX       rowAB      ∆rowAB        colX  ...          χX  \
+ count  438.000000  438.000000  438.000000  438.000000  ...  438.000000   
+ mean     4.554795    4.380137    1.180365   10.840183  ...    1.400023   
+ std      1.162126    0.793217    0.906058    3.135685  ...    0.477015   
+ min      2.000000    2.000000    0.000000    1.000000  ...    0.450000   
+ 25%      4.000000    4.000000    1.000000    9.000000  ...    1.050000   
+ 50%      5.000000    4.500000    1.000000   10.000000  ...    1.120000   
+ 75%      6.000000    5.000000    2.000000   14.000000  ...    1.900000   
+ max      6.000000    6.000000    4.000000   17.000000  ...    2.700000   
+ 
+               χAB        ∆χAB       alatt          cv     κ˜grain  \
+ count  438.000000  438.000000  438.000000  438.000000  438.000000   
+ mean     1.177169    0.931826    6.246416   19.769612    0.901941   
+ std      0.416033    0.487780    0.638922    4.691092    0.423495   
+ min      0.380000    0.050000    4.910000    9.080000    0.230000   
+ 25%      0.940000    0.612500    5.820000   16.400000    0.572500   
+ 50%      1.290000    1.010000    6.120000   20.295000    0.860000   
+ 75%      1.420000    1.315000    6.575000   22.827500    1.117500   
+ max      2.670000    1.970000    8.140000   33.600000    2.470000   
+ 
+            κtransf     κforest        κanh         gap  
+ count   438.000000  438.000000  438.000000  438.000000  
+ mean     96.922215   13.489429   18.231849    0.709406  
+ std     279.437386   10.018716   38.894186    0.610689  
+ min       0.010000    0.820000    0.000000    0.020000  
+ 25%       4.607500    4.742500    4.317500    0.300000  
+ 50%      38.965000    9.540000   12.000000    0.600000  
+ 75%     106.412500   21.067500   23.552500    0.947500  
+ max    5059.980000   46.480000  748.190000    4.940000  
+ 
+ [8 rows x 28 columns],
+ 'Features': ['ZX',
+  'ZAB',
+  'ZAB.1',
+  'mX',
+  'mAB',
+  '∆mAB',
+  'rowX',
+  'rowAB',
+  '∆rowAB',
+  'colX',
+  'colAB',
+  '∆colAB',
+  'eX',
+  'eAB',
+  '∆eAB',
+  'rX',
+  'rAB',
+  '∆rAB',
+  'χX',
+  'χAB',
+  '∆χAB',
+  'alatt',
+  'κ˜grain',
+  'κtransf',
+  'κforest',
+  'κanh',
+  'gap']}
+​
+Model,Best Parameters,Search Grid
+RandomForestRegressor,"{'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}","{'n_estimators': [50, 100, 200], 'max_depth': [None, 10, 20, 30], 'min_samples_split': [2, 5, 10], 'min_samples_leaf': [1, 2, 4], 'max_features': ['auto', 'sqrt', 'log2']}"
+GradientBoostingRegressor,"{'learning_rate': 0.1, 'max_depth': 3, 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 200}","{'n_estimators': [50, 100, 200], 'learning_rate': [0.01, 0.1, 0.2], 'max_depth': [3, 5, 7], 'min_samples_split': [2, 5, 10], 'min_samples_leaf': [1, 2, 4]}"
+LinearRegression,"{'fit_intercept': True, 'positive': True}","{'fit_intercept': [True, False], 'positive': [True, False]}"
+
+Where Base models:{RandomForestRegressor,GradientBoostingRegressor}
+meta_model:{LinearRegression}
+
+
+Other models:{AdaBoost,DecisionTrees,ExtraTrees,GausianProcess}
+
